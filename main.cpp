@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    system("chcp 65001 >nul"); 
     cout << "\033[1;33m";
     cout << R"====ASCII====(
                                              _______________________
@@ -60,6 +61,24 @@ int main() {
 
                )====ASCII====";
 
-    cout << "\033[0m\n\n"; //reset warna    
+    cout << "\033[0m\n"; //reset warna   
+    int menu;
+    do{
+      cout << endl << R"====ASCII====(──★ ˙ ̟⪩⪨ Menu Bukuku !!)====ASCII====";
+      cout << "\n1. Sign Up\n2. Login\n3. Forgot Password\n0. Exit\nMenu: ";
+      cin  >> menu;
+      switch (menu){
+        case 1:
+        break;
+        case 2:
+        break;
+        case 3:
+        break;
+        case 0:
+        break;
+        default:
+        cout << "Pilihan tidak valid!";
+      }
+    } while (menu!=0);
     return 0;                           
 }
