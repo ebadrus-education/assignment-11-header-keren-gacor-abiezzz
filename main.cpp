@@ -64,8 +64,11 @@ int main() {
     cout << "\033[0m\n"; //reset warna   
     int menu;
     do{
-      cout << endl << R"====ASCII====(──★ ˙ ̟⪩⪨ Menu Bukuku !!)====ASCII====";
-      cout << "\n1. Sign Up\n2. Login\n3. Forgot Password\n0. Exit\nMenu: ";
+      cout << "\033[1;36m"
+           << endl
+           << R"====ASCII====(──★ ˙ ̟⪩⪨ Menu Bukuku !!)====ASCII====" 
+           << "\n1. Sign Up\n2. Login\n3. Forgot Password\n0. Exit\nMenu: ";
+           cout << "\033[0m\n";
       cin  >> menu;
       switch (menu){
         case 1:
