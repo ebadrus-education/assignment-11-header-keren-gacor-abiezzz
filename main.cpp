@@ -60,5 +60,6 @@ int main() {
 
                )====ASCII====";
 
-    cout << "\033[0m\n\n"; //reset warna                               
+    cout << "\033[0m\n\n"; //reset warna    
+    return 0;                           
 }
